@@ -27,7 +27,7 @@ variable (recommended) or provide it as an argument when you instantiate a new A
     # Note that APSIS is fussy about the capitalization of the keys.
     apsis.create_subscribers(123456, [
       { 'Email' => 'johndoe@example.com', 'Name' => 'John Doe' },
-      { 'Email' => 'janedoe@example.com', 'Name' => 'jane.doe@example.com' }
+      { 'Email' => 'janedoe@example.com', 'Name' => 'Jane Doe' }
     ])
 
 ## Contributing
