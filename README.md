@@ -19,15 +19,16 @@ Or install it yourself as:
 
 ## Usage
 
-Either provide your APSIS API key using the APSIS_API_KEY environment
+Either provide your APSIS API key using the `APSIS_API_KEY` environment
 variable (recommended) or provide it as an argument when you instantiate a new Apsis object 
 
     apsis = Apsis.new
     # Add two new subscribers to the mailing list with id 123456
-    apsis.create_subscribers(123456, [{'Email': 'johndoe@example.com', 'Name':
-'John Doe'}, {'Email: 'janedoe@example.com', 'Name':
-'jane.doe@example.com'}] # Note that APSIS wants these keys to be capitalized.
-
+    # Note that APSIS is fussy about the capitalization of the keys.
+    apsis.create_subscribers(123456, [
+      { 'Email' => 'johndoe@example.com', 'Name' => 'John Doe' },
+      { 'Email' => 'janedoe@example.com', 'Name' => 'jane.doe@example.com' }
+    ])
 
 ## Contributing
 

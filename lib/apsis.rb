@@ -1,4 +1,6 @@
-#require "apsis/version"
+require 'apsis/version'
+require 'faraday'
+require 'json'
 
 class Apsis
   ApsisError = Class.new(StandardError)
