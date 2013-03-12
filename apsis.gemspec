@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
   gem.rubyforge_project = "apsis"
 
   # Dependencies
-  # specify any dependencies here; for example:
   gem.add_development_dependency "rspec"
+  gem.add_development_dependency "vcr"
   gem.add_runtime_dependency     "faraday"
 end
