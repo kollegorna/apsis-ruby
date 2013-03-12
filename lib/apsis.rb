@@ -24,7 +24,7 @@ class Apsis
     unless response.status == 200
       raise ApsisError.new("Apsis API Error: #{response.body} (status code #{response.status})")
     end
-    response.body
+    JSON.parse response.body
   end
 
   def create_subscribers(mailinglist_id, subscribers = [])
