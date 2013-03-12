@@ -9,8 +9,10 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Henrik Sjökvist"]
   gem.email         = ["henrik.sjokvist@gmail.com"]
   gem.description   = %q{A simple API wrapper for the APSIS mail marketing service.}
-  gem.summary       = %q{A simple API wrapper for the APSIS mail marketing service.}
+  gem.summary       = %q{A simple API wrapper for the APSIS mail marketing service. 
+                         This gem currently only supports adding subcribers to a mailing list.}
   gem.homepage      = "http://github.com/kollegorna/apsis-ruby"
+  gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
